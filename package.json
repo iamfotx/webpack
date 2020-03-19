@@ -1,0 +1,26 @@
+{
+  "name": "webpack",
+  "version": "1.0.0",
+  "description": "learning webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/iamfotx/webpack.git"
+  },
+  "keywords": [
+    "webpack",
+    "javascript"
+  ],
+  "author": "Ahmad Raza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iamfotx/webpack/issues"
+  },
+  "homepage": "https://github.com/iamfotx/webpack#readme",
+  "devDependencies": {
+    "webpack": "^4.42.0"
+  }
+}
