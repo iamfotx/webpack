@@ -5,8 +5,8 @@
   "main": "./src/index.js",
   "scripts": {
     "webpack": "webpack",
-    "webpack:dev": "webpack --mode=development",
-    "webpack:prod": "webpack --mode=production"
+    "webpack:dev": "yarn webpack --mode development",
+    "webpack:prod": "yarn webpack --mode production"
   },
   "repository": {
     "type": "git",
