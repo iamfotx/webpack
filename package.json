@@ -5,7 +5,8 @@
   "main": "./src/index.js",
   "scripts": {
     "webpack": "webpack",
-    "dev": "yarn webpack --env.mode development --watch",
+    "webpack-dev-server": "webpack-dev-server",
+    "dev": "yarn webpack-dev-server --env.mode development --watch",
     "prod": "yarn webpack --env.mode production",
     "webpack:debug": "node --inspect --inspect-brk ./node_modules/webpack/bin/webpack.js",
     "prod:debug": "yarn webpack:debug --env.mode production",
@@ -28,6 +29,7 @@
   "devDependencies": {
     "html-webpack-plugin": "^4.0.2",
     "webpack": "^4.42.0",
-    "webpack-cli": "^3.3.11"
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
   }
 }
