@@ -9,6 +9,7 @@
         "dev": "yarn webpack-dev-server --env.mode development --watch --hot",
         "prod": "yarn webpack --env.mode production",
         "prod:typescript": "yarn prod --env.presets typescript",
+        "prod:analyze": "yarn prod --env.presets analyze",
         "webpack:debug": "node --inspect --inspect-brk ./node_modules/webpack/bin/webpack.js",
         "prod:debug": "yarn webpack:debug --env.mode production",
         "dev:debug": "yarn webpack:debug --env.mode development"
@@ -37,6 +38,7 @@
         "typescript": "^3.9.0-dev.20200328",
         "url-loader": "^4.0.0",
         "webpack": "^4.42.0",
+        "webpack-bundle-analyzer": "^3.6.1",
         "webpack-cli": "^3.3.11",
         "webpack-dev-server": "^3.10.3",
         "webpack-merge": "^4.2.2"
