@@ -1,6 +1,7 @@
+const getGsap = () => import('gsap');
 import nav from './nav';
 import makeButton from './button';
-import { makeColorStyle, red } from './button-styles';
+import { makeColorStyle } from './button-styles';
 import imageURL from './webpack-icon.jpg';
 import makeImage from './image';
 const getFooter = () => import('./footer');
@@ -16,5 +17,6 @@ button.addEventListener('click', function clickListener(e) {
     getFooter().then(({ footer }) => {
         document.body.appendChild(footer);
     });
+    getGsap().then(console.log);
 });
 console.log(nav());
