@@ -1,4 +1,5 @@
 const getGsap = () => import('gsap');
+const getLodashUniq = () => import('lodash-es/uniq'); // the only way to do code splitting for named exports
 import nav from './nav';
 import makeButton from './button';
 import { makeColorStyle } from './button-styles';
@@ -17,6 +18,7 @@ button.addEventListener('click', function clickListener(e) {
     getFooter().then(({ footer }) => {
         document.body.appendChild(footer);
     });
+    getLodashUniq().then(console.log);
     getGsap().then(console.log);
 });
 console.log(nav());
