@@ -5,7 +5,7 @@ import makeButton from './button';
 import { makeColorStyle } from './button-styles';
 import imageURL from './webpack-icon.jpg';
 import makeImage from './image';
-const getFooter = () => import('./footer');
+const getFooter = () => import(/* webpackChunkName: "footer"*/ './footer');
 import './button.css';
 
 const setButtonStyle = color => import(`./button-styles/${color}`);
