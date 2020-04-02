@@ -8,6 +8,7 @@ import makeImage from './image';
 const getFooter = () => import('./footer');
 import './button.css';
 
+const setButtonStyle = color => import(`./button-styles/${color}`);
 const image = makeImage(imageURL);
 const button = makeButton('Yay! my first button!');
 button.style = makeColorStyle('cyan');
@@ -20,5 +21,8 @@ button.addEventListener('click', function clickListener(e) {
     });
     getLodashUniq().then(console.log);
     getGsap().then(console.log);
+    setButtonStyle('red').then(({ default: style }) => {
+        button.style = style;
+    });
 });
 console.log(nav());
